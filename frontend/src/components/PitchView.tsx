@@ -1,4 +1,4 @@
-import type { Player } from "../lib/constants";
+import type { Player, Position } from "../lib/constants";
 import { PlayerCard } from "./PlayerCard";
 
 const formationRows: Record<string, number[]> = {
@@ -21,7 +21,7 @@ interface PitchViewProps {
   onRemove: (playerId: string) => void;
 }
 
-function preferredPosition(row: number, rows: number): string {
+function preferredPosition(row: number, rows: number): Position {
   if (row === 0) return "GK";
   if (row === 1) return "DEF";
   if (row === rows - 1) return "FWD";
@@ -30,9 +30,24 @@ function preferredPosition(row: number, rows: number): string {
 
 export function PitchView({ formation, players, captainId, viceCaptainId, onSlotClick, onPlayerClick, onRemove }: PitchViewProps) {
   const rows = formationRows[formation] ?? formationRows["4-2-3-1"];
-  let cursor = 0;
-  const starters = players.slice(0, 11);
-  const bench = players.slice(11, 15);
+  const positionQueues: Record<Position, Player[]> = {
+    GK: players.filter((player) => player.position === "GK"),
+    DEF: players.filter((player) => player.position === "DEF"),
+    MID: players.filter((player) => player.position === "MID"),
+    FWD: players.filter((player) => player.position === "FWD"),
+  };
+  const assignedIds = new Set<string>();
+  const pitchRows = rows.map((count, rowIndex) => {
+    const position = preferredPosition(rowIndex, rows.length);
+    const rowPlayers = Array.from({ length: count }, () => {
+      const player = positionQueues[position].shift();
+      if (player) assignedIds.add(player.player_id);
+      return player;
+    });
+
+    return { count, position, rowPlayers };
+  });
+  const bench = players.filter((player) => !assignedIds.has(player.player_id)).slice(0, 4);
 
   return (
     <div className="rounded border border-line bg-[#0c422b] p-3 shadow-2xl">
@@ -45,10 +60,7 @@ export function PitchView({ formation, players, captainId, viceCaptainId, onSlot
           <rect x="28" y="118" width="44" height="18" fill="none" stroke="white" strokeWidth="0.8" />
         </svg>
         <div className="relative z-10 flex min-h-[620px] flex-col justify-between gap-4">
-          {rows.map((count, rowIndex) => {
-            const rowPlayers = starters.slice(cursor, cursor + count);
-            cursor += count;
-            const position = preferredPosition(rowIndex, rows.length);
+          {pitchRows.map(({ count, position, rowPlayers }, rowIndex) => {
             return (
               <div key={`${formation}-${rowIndex}`} className="grid gap-3" style={{ gridTemplateColumns: `repeat(${count}, minmax(0, 1fr))` }}>
                 {Array.from({ length: count }).map((_, index) => {
