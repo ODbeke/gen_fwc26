@@ -1,0 +1,1295 @@
+[
+  {
+    "player_id": "ESP_yamal_lamine",
+    "name": "Lamine Yamal",
+    "country": "Spain",
+    "position": "MID",
+    "price": 130
+  },
+  {
+    "player_id": "FRA_mbappe_kylian",
+    "name": "Kylian Mbappe",
+    "country": "France",
+    "position": "FWD",
+    "price": 135
+  },
+  {
+    "player_id": "NOR_haaland_erling",
+    "name": "Erling Haaland",
+    "country": "Norway",
+    "position": "FWD",
+    "price": 140
+  },
+  {
+    "player_id": "ENG_bellingham_jude",
+    "name": "Jude Bellingham",
+    "country": "England",
+    "position": "MID",
+    "price": 120
+  },
+  {
+    "player_id": "ENG_kane_harry",
+    "name": "Harry Kane",
+    "country": "England",
+    "position": "FWD",
+    "price": 115
+  },
+  {
+    "player_id": "BEL_bruyne_kevin",
+    "name": "Kevin De Bruyne",
+    "country": "Belgium",
+    "position": "MID",
+    "price": 118
+  },
+  {
+    "player_id": "POR_ronaldo_cristiano",
+    "name": "Cristiano Ronaldo",
+    "country": "Portugal",
+    "position": "FWD",
+    "price": 110
+  },
+  {
+    "player_id": "POR_fernandes_bruno",
+    "name": "Bruno Fernandes",
+    "country": "Portugal",
+    "position": "MID",
+    "price": 105
+  },
+  {
+    "player_id": "BRA_jr_vinicius",
+    "name": "Vinicius Jr",
+    "country": "Brazil",
+    "position": "FWD",
+    "price": 135
+  },
+  {
+    "player_id": "GER_wirtz_florian",
+    "name": "Florian Wirtz",
+    "country": "Germany",
+    "position": "MID",
+    "price": 115
+  },
+  {
+    "player_id": "GER_musiala_jamal",
+    "name": "Jamal Musiala",
+    "country": "Germany",
+    "position": "MID",
+    "price": 118
+  },
+  {
+    "player_id": "ESP_rodri",
+    "name": "Rodri",
+    "country": "Spain",
+    "position": "MID",
+    "price": 110
+  },
+  {
+    "player_id": "ESP_pedri",
+    "name": "Pedri",
+    "country": "Spain",
+    "position": "MID",
+    "price": 108
+  },
+  {
+    "player_id": "NOR_odegaard_martin",
+    "name": "Martin Odegaard",
+    "country": "Norway",
+    "position": "MID",
+    "price": 108
+  },
+  {
+    "player_id": "NOR_sorloth_alexander",
+    "name": "Alexander Sorloth",
+    "country": "Norway",
+    "position": "FWD",
+    "price": 95
+  },
+  {
+    "player_id": "ENG_saka_bukayo",
+    "name": "Bukayo Saka",
+    "country": "England",
+    "position": "MID",
+    "price": 112
+  },
+  {
+    "player_id": "BEL_lukaku_romelu",
+    "name": "Romelu Lukaku",
+    "country": "Belgium",
+    "position": "FWD",
+    "price": 105
+  },
+  {
+    "player_id": "BEL_doku_jeremy",
+    "name": "Jeremy Doku",
+    "country": "Belgium",
+    "position": "MID",
+    "price": 100
+  },
+  {
+    "player_id": "FRA_thuram_marcus",
+    "name": "Marcus Thuram",
+    "country": "France",
+    "position": "FWD",
+    "price": 105
+  },
+  {
+    "player_id": "CRO_gvardiol_josko",
+    "name": "Josko Gvardiol",
+    "country": "Croatia",
+    "position": "DEF",
+    "price": 95
+  },
+  {
+    "player_id": "CRO_modric_luka",
+    "name": "Luka Modric",
+    "country": "Croatia",
+    "position": "MID",
+    "price": 90
+  },
+  {
+    "player_id": "SCO_mctominay_scott",
+    "name": "Scott McTominay",
+    "country": "Scotland",
+    "position": "MID",
+    "price": 88
+  },
+  {
+    "player_id": "KOR_heungmin_son",
+    "name": "Son Heung-min",
+    "country": "South Korea",
+    "position": "FWD",
+    "price": 105
+  },
+  {
+    "player_id": "SEN_mane_sadio",
+    "name": "Sadio Mane",
+    "country": "Senegal",
+    "position": "FWD",
+    "price": 95
+  },
+  {
+    "player_id": "SEN_jackson_nicolas",
+    "name": "Nicolas Jackson",
+    "country": "Senegal",
+    "position": "FWD",
+    "price": 88
+  },
+  {
+    "player_id": "SWE_gyokeres_viktor",
+    "name": "Viktor Gyokeres",
+    "country": "Sweden",
+    "position": "FWD",
+    "price": 100
+  },
+  {
+    "player_id": "SWE_isak_alexander",
+    "name": "Alexander Isak",
+    "country": "Sweden",
+    "position": "FWD",
+    "price": 102
+  },
+  {
+    "player_id": "SUI_xhaka_granit",
+    "name": "Granit Xhaka",
+    "country": "Switzerland",
+    "position": "MID",
+    "price": 88
+  },
+  {
+    "player_id": "BEL_courtois_thibaut",
+    "name": "Thibaut Courtois",
+    "country": "Belgium",
+    "position": "GK",
+    "price": 85
+  },
+  {
+    "player_id": "GER_neuer_manuel",
+    "name": "Manuel Neuer",
+    "country": "Germany",
+    "position": "GK",
+    "price": 80
+  },
+  {
+    "player_id": "BRA_alisson",
+    "name": "Alisson",
+    "country": "Brazil",
+    "position": "GK",
+    "price": 82
+  },
+  {
+    "player_id": "BRA_raphinha",
+    "name": "Raphinha",
+    "country": "Brazil",
+    "position": "MID",
+    "price": 100
+  },
+  {
+    "player_id": "BRA_neymar",
+    "name": "Neymar",
+    "country": "Brazil",
+    "position": "FWD",
+    "price": 105
+  },
+  {
+    "player_id": "BRA_endrick",
+    "name": "Endrick",
+    "country": "Brazil",
+    "position": "FWD",
+    "price": 88
+  },
+  {
+    "player_id": "ESP_gavi",
+    "name": "Gavi",
+    "country": "Spain",
+    "position": "MID",
+    "price": 100
+  },
+  {
+    "player_id": "ESP_simon_unai",
+    "name": "Unai Simon",
+    "country": "Spain",
+    "position": "GK",
+    "price": 70
+  },
+  {
+    "player_id": "ESP_carvajal_dani",
+    "name": "Dani Carvajal",
+    "country": "Spain",
+    "position": "DEF",
+    "price": 78
+  },
+  {
+    "player_id": "ESP_laporte_aymeric",
+    "name": "Aymeric Laporte",
+    "country": "Spain",
+    "position": "DEF",
+    "price": 75
+  },
+  {
+    "player_id": "ESP_williams_nico",
+    "name": "Nico Williams",
+    "country": "Spain",
+    "position": "MID",
+    "price": 92
+  },
+  {
+    "player_id": "ESP_morata_alvaro",
+    "name": "Alvaro Morata",
+    "country": "Spain",
+    "position": "FWD",
+    "price": 82
+  },
+  {
+    "player_id": "FRA_maignan_mike",
+    "name": "Mike Maignan",
+    "country": "France",
+    "position": "GK",
+    "price": 78
+  },
+  {
+    "player_id": "FRA_saliba_william",
+    "name": "William Saliba",
+    "country": "France",
+    "position": "DEF",
+    "price": 86
+  },
+  {
+    "player_id": "FRA_hernandez_theo",
+    "name": "Theo Hernandez",
+    "country": "France",
+    "position": "DEF",
+    "price": 88
+  },
+  {
+    "player_id": "FRA_camavinga_eduardo",
+    "name": "Eduardo Camavinga",
+    "country": "France",
+    "position": "MID",
+    "price": 90
+  },
+  {
+    "player_id": "FRA_griezmann_antoine",
+    "name": "Antoine Griezmann",
+    "country": "France",
+    "position": "MID",
+    "price": 96
+  },
+  {
+    "player_id": "ENG_pickford_jordan",
+    "name": "Jordan Pickford",
+    "country": "England",
+    "position": "GK",
+    "price": 72
+  },
+  {
+    "player_id": "ENG_stones_john",
+    "name": "John Stones",
+    "country": "England",
+    "position": "DEF",
+    "price": 82
+  },
+  {
+    "player_id": "ENG_rice_declan",
+    "name": "Declan Rice",
+    "country": "England",
+    "position": "MID",
+    "price": 96
+  },
+  {
+    "player_id": "ENG_foden_phil",
+    "name": "Phil Foden",
+    "country": "England",
+    "position": "MID",
+    "price": 110
+  },
+  {
+    "player_id": "ENG_palmer_cole",
+    "name": "Cole Palmer",
+    "country": "England",
+    "position": "MID",
+    "price": 98
+  },
+  {
+    "player_id": "GER_rudiger_antonio",
+    "name": "Antonio Rudiger",
+    "country": "Germany",
+    "position": "DEF",
+    "price": 82
+  },
+  {
+    "player_id": "GER_kimmich_joshua",
+    "name": "Joshua Kimmich",
+    "country": "Germany",
+    "position": "MID",
+    "price": 92
+  },
+  {
+    "player_id": "GER_havertz_kai",
+    "name": "Kai Havertz",
+    "country": "Germany",
+    "position": "FWD",
+    "price": 88
+  },
+  {
+    "player_id": "GER_sane_leroy",
+    "name": "Leroy Sane",
+    "country": "Germany",
+    "position": "MID",
+    "price": 86
+  },
+  {
+    "player_id": "BEL_tielemans_youri",
+    "name": "Youri Tielemans",
+    "country": "Belgium",
+    "position": "MID",
+    "price": 72
+  },
+  {
+    "player_id": "BEL_onana_amadou",
+    "name": "Amadou Onana",
+    "country": "Belgium",
+    "position": "MID",
+    "price": 74
+  },
+  {
+    "player_id": "BEL_trossard_leandro",
+    "name": "Leandro Trossard",
+    "country": "Belgium",
+    "position": "MID",
+    "price": 84
+  },
+  {
+    "player_id": "BEL_vertonghen_jan",
+    "name": "Jan Vertonghen",
+    "country": "Belgium",
+    "position": "DEF",
+    "price": 66
+  },
+  {
+    "player_id": "NOR_nyland_orjan",
+    "name": "Orjan Nyland",
+    "country": "Norway",
+    "position": "GK",
+    "price": 55
+  },
+  {
+    "player_id": "NOR_ostigard_leo",
+    "name": "Leo Ostigard",
+    "country": "Norway",
+    "position": "DEF",
+    "price": 62
+  },
+  {
+    "player_id": "NOR_nusa_antonio",
+    "name": "Antonio Nusa",
+    "country": "Norway",
+    "position": "MID",
+    "price": 72
+  },
+  {
+    "player_id": "NOR_bobb_oscar",
+    "name": "Oscar Bobb",
+    "country": "Norway",
+    "position": "MID",
+    "price": 68
+  },
+  {
+    "player_id": "POR_costa_diogo",
+    "name": "Diogo Costa",
+    "country": "Portugal",
+    "position": "GK",
+    "price": 78
+  },
+  {
+    "player_id": "POR_dias_ruben",
+    "name": "Ruben Dias",
+    "country": "Portugal",
+    "position": "DEF",
+    "price": 86
+  },
+  {
+    "player_id": "POR_cancelo_joao",
+    "name": "Joao Cancelo",
+    "country": "Portugal",
+    "position": "DEF",
+    "price": 85
+  },
+  {
+    "player_id": "POR_leao_rafael",
+    "name": "Rafael Leao",
+    "country": "Portugal",
+    "position": "FWD",
+    "price": 96
+  },
+  {
+    "player_id": "CRO_livakovic_dominik",
+    "name": "Dominik Livakovic",
+    "country": "Croatia",
+    "position": "GK",
+    "price": 68
+  },
+  {
+    "player_id": "CRO_kovacic_mateo",
+    "name": "Mateo Kovacic",
+    "country": "Croatia",
+    "position": "MID",
+    "price": 80
+  },
+  {
+    "player_id": "CRO_brozovic_marcelo",
+    "name": "Marcelo Brozovic",
+    "country": "Croatia",
+    "position": "MID",
+    "price": 76
+  },
+  {
+    "player_id": "CRO_kramaric_andrej",
+    "name": "Andrej Kramaric",
+    "country": "Croatia",
+    "position": "FWD",
+    "price": 78
+  },
+  {
+    "player_id": "SUI_sommer_yann",
+    "name": "Yann Sommer",
+    "country": "Switzerland",
+    "position": "GK",
+    "price": 70
+  },
+  {
+    "player_id": "SUI_akanji_manuel",
+    "name": "Manuel Akanji",
+    "country": "Switzerland",
+    "position": "DEF",
+    "price": 78
+  },
+  {
+    "player_id": "SUI_embolo_breel",
+    "name": "Breel Embolo",
+    "country": "Switzerland",
+    "position": "FWD",
+    "price": 76
+  },
+  {
+    "player_id": "SUI_ndoye_dan",
+    "name": "Dan Ndoye",
+    "country": "Switzerland",
+    "position": "MID",
+    "price": 68
+  },
+  {
+    "player_id": "BRA_marquinhos",
+    "name": "Marquinhos",
+    "country": "Brazil",
+    "position": "DEF",
+    "price": 84
+  },
+  {
+    "player_id": "BRA_militao_eder",
+    "name": "Eder Militao",
+    "country": "Brazil",
+    "position": "DEF",
+    "price": 82
+  },
+  {
+    "player_id": "BRA_guimaraes_bruno",
+    "name": "Bruno Guimaraes",
+    "country": "Brazil",
+    "position": "MID",
+    "price": 86
+  },
+  {
+    "player_id": "BRA_rodrygo",
+    "name": "Rodrygo",
+    "country": "Brazil",
+    "position": "FWD",
+    "price": 98
+  },
+  {
+    "player_id": "SCO_gunn_angus",
+    "name": "Angus Gunn",
+    "country": "Scotland",
+    "position": "GK",
+    "price": 58
+  },
+  {
+    "player_id": "SCO_robertson_andy",
+    "name": "Andy Robertson",
+    "country": "Scotland",
+    "position": "DEF",
+    "price": 82
+  },
+  {
+    "player_id": "SCO_tierney_kieran",
+    "name": "Kieran Tierney",
+    "country": "Scotland",
+    "position": "DEF",
+    "price": 72
+  },
+  {
+    "player_id": "SCO_mcginn_john",
+    "name": "John McGinn",
+    "country": "Scotland",
+    "position": "MID",
+    "price": 76
+  },
+  {
+    "player_id": "JPN_suzuki_zion",
+    "name": "Zion Suzuki",
+    "country": "Japan",
+    "position": "GK",
+    "price": 58
+  },
+  {
+    "player_id": "JPN_tomiyasu_takehiro",
+    "name": "Takehiro Tomiyasu",
+    "country": "Japan",
+    "position": "DEF",
+    "price": 76
+  },
+  {
+    "player_id": "JPN_endo_wataru",
+    "name": "Wataru Endo",
+    "country": "Japan",
+    "position": "MID",
+    "price": 72
+  },
+  {
+    "player_id": "JPN_mitoma_kaoru",
+    "name": "Kaoru Mitoma",
+    "country": "Japan",
+    "position": "MID",
+    "price": 82
+  },
+  {
+    "player_id": "JPN_kubo_takefusa",
+    "name": "Takefusa Kubo",
+    "country": "Japan",
+    "position": "MID",
+    "price": 86
+  },
+  {
+    "player_id": "SWE_olsen_robin",
+    "name": "Robin Olsen",
+    "country": "Sweden",
+    "position": "GK",
+    "price": 55
+  },
+  {
+    "player_id": "SWE_lindelof_victor",
+    "name": "Victor Lindelof",
+    "country": "Sweden",
+    "position": "DEF",
+    "price": 66
+  },
+  {
+    "player_id": "SWE_kulusevski_dejan",
+    "name": "Dejan Kulusevski",
+    "country": "Sweden",
+    "position": "MID",
+    "price": 88
+  },
+  {
+    "player_id": "SWE_elanga_anthony",
+    "name": "Anthony Elanga",
+    "country": "Sweden",
+    "position": "MID",
+    "price": 72
+  },
+  {
+    "player_id": "KOR_seunggyu_kim",
+    "name": "Kim Seung-gyu",
+    "country": "South Korea",
+    "position": "GK",
+    "price": 56
+  },
+  {
+    "player_id": "KOR_minjae_kim",
+    "name": "Kim Min-jae",
+    "country": "South Korea",
+    "position": "DEF",
+    "price": 84
+  },
+  {
+    "player_id": "KOR_kangin_lee",
+    "name": "Lee Kang-in",
+    "country": "South Korea",
+    "position": "MID",
+    "price": 82
+  },
+  {
+    "player_id": "KOR_heechan_hwang",
+    "name": "Hwang Hee-chan",
+    "country": "South Korea",
+    "position": "FWD",
+    "price": 78
+  },
+  {
+    "player_id": "SEN_mendy_edouard",
+    "name": "Edouard Mendy",
+    "country": "Senegal",
+    "position": "GK",
+    "price": 70
+  },
+  {
+    "player_id": "SEN_koulibaly_kalidou",
+    "name": "Kalidou Koulibaly",
+    "country": "Senegal",
+    "position": "DEF",
+    "price": 78
+  },
+  {
+    "player_id": "SEN_sarr_pape",
+    "name": "Pape Matar Sarr",
+    "country": "Senegal",
+    "position": "MID",
+    "price": 74
+  },
+  {
+    "player_id": "SEN_sarr_ismaila",
+    "name": "Ismaila Sarr",
+    "country": "Senegal",
+    "position": "MID",
+    "price": 76
+  },
+  {
+    "player_id": "BIH_dzeko_edin",
+    "name": "Edin Dzeko",
+    "country": "Bosnia-Herzegovina",
+    "position": "FWD",
+    "price": 74
+  },
+  {
+    "player_id": "BIH_krunic_rade",
+    "name": "Rade Krunic",
+    "country": "Bosnia-Herzegovina",
+    "position": "MID",
+    "price": 66
+  },
+  {
+    "player_id": "BIH_kolasinac_sead",
+    "name": "Sead Kolasinac",
+    "country": "Bosnia-Herzegovina",
+    "position": "DEF",
+    "price": 68
+  },
+  {
+    "player_id": "BIH_dedic_amar",
+    "name": "Amar Dedic",
+    "country": "Bosnia-Herzegovina",
+    "position": "DEF",
+    "price": 64
+  },
+  {
+    "player_id": "BIH_sehic_ibrahim",
+    "name": "Ibrahim Sehic",
+    "country": "Bosnia-Herzegovina",
+    "position": "GK",
+    "price": 52
+  },
+  {
+    "player_id": "QAT_barsham_meshaal",
+    "name": "Meshaal Barsham",
+    "country": "Qatar",
+    "position": "GK",
+    "price": 50
+  },
+  {
+    "player_id": "QAT_afif_akram",
+    "name": "Akram Afif",
+    "country": "Qatar",
+    "position": "FWD",
+    "price": 74
+  },
+  {
+    "player_id": "QAT_ali_almoez",
+    "name": "Almoez Ali",
+    "country": "Qatar",
+    "position": "FWD",
+    "price": 70
+  },
+  {
+    "player_id": "QAT_alhaydos_hassan",
+    "name": "Hassan Al-Haydos",
+    "country": "Qatar",
+    "position": "MID",
+    "price": 62
+  },
+  {
+    "player_id": "QAT_khoukhi_boualem",
+    "name": "Boualem Khoukhi",
+    "country": "Qatar",
+    "position": "DEF",
+    "price": 58
+  },
+  {
+    "player_id": "NZL_wood_chris",
+    "name": "Chris Wood",
+    "country": "New Zealand",
+    "position": "FWD",
+    "price": 72
+  },
+  {
+    "player_id": "NZL_cacace_liberato",
+    "name": "Liberato Cacace",
+    "country": "New Zealand",
+    "position": "DEF",
+    "price": 62
+  },
+  {
+    "player_id": "NZL_bell_joe",
+    "name": "Joe Bell",
+    "country": "New Zealand",
+    "position": "MID",
+    "price": 58
+  },
+  {
+    "player_id": "NZL_stamenic_marko",
+    "name": "Marko Stamenic",
+    "country": "New Zealand",
+    "position": "MID",
+    "price": 62
+  },
+  {
+    "player_id": "NZL_crocombe_max",
+    "name": "Max Crocombe",
+    "country": "New Zealand",
+    "position": "GK",
+    "price": 50
+  },
+  {
+    "player_id": "CPV_vozinha",
+    "name": "Vozinha",
+    "country": "Cape Verde",
+    "position": "GK",
+    "price": 50
+  },
+  {
+    "player_id": "CPV_costa_logan",
+    "name": "Logan Costa",
+    "country": "Cape Verde",
+    "position": "DEF",
+    "price": 62
+  },
+  {
+    "player_id": "CPV_mendes_ryan",
+    "name": "Ryan Mendes",
+    "country": "Cape Verde",
+    "position": "FWD",
+    "price": 66
+  },
+  {
+    "player_id": "CPV_cabral_jovane",
+    "name": "Jovane Cabral",
+    "country": "Cape Verde",
+    "position": "MID",
+    "price": 64
+  },
+  {
+    "player_id": "CPV_bebe",
+    "name": "Bebe",
+    "country": "Cape Verde",
+    "position": "FWD",
+    "price": 60
+  },
+  {
+    "player_id": "CUW_room_eloy",
+    "name": "Eloy Room",
+    "country": "Curaçao",
+    "position": "GK",
+    "price": 50
+  },
+  {
+    "player_id": "CUW_martina_cuco",
+    "name": "Cuco Martina",
+    "country": "Curaçao",
+    "position": "DEF",
+    "price": 56
+  },
+  {
+    "player_id": "CUW_bacuna_leandro",
+    "name": "Leandro Bacuna",
+    "country": "Curaçao",
+    "position": "MID",
+    "price": 60
+  },
+  {
+    "player_id": "CUW_bacuna_juninho",
+    "name": "Juninho Bacuna",
+    "country": "Curaçao",
+    "position": "MID",
+    "price": 58
+  },
+  {
+    "player_id": "CUW_kuwas_brandley",
+    "name": "Brandley Kuwas",
+    "country": "Curaçao",
+    "position": "FWD",
+    "price": 56
+  },
+  {
+    "player_id": "CIV_fofana_yahia",
+    "name": "Yahia Fofana",
+    "country": "Ivory Coast",
+    "position": "GK",
+    "price": 56
+  },
+  {
+    "player_id": "CIV_ndicka_evan",
+    "name": "Evan Ndicka",
+    "country": "Ivory Coast",
+    "position": "DEF",
+    "price": 72
+  },
+  {
+    "player_id": "CIV_kessie_franck",
+    "name": "Franck Kessie",
+    "country": "Ivory Coast",
+    "position": "MID",
+    "price": 82
+  },
+  {
+    "player_id": "CIV_adingra_simon",
+    "name": "Simon Adingra",
+    "country": "Ivory Coast",
+    "position": "MID",
+    "price": 76
+  },
+  {
+    "player_id": "CIV_haller_sebastien",
+    "name": "Sebastien Haller",
+    "country": "Ivory Coast",
+    "position": "FWD",
+    "price": 78
+  },
+  {
+    "player_id": "HAI_placide_johny",
+    "name": "Johny Placide",
+    "country": "Haiti",
+    "position": "GK",
+    "price": 48
+  },
+  {
+    "player_id": "HAI_ade_ricardo",
+    "name": "Ricardo Ade",
+    "country": "Haiti",
+    "position": "DEF",
+    "price": 52
+  },
+  {
+    "player_id": "HAI_alceus_bryan",
+    "name": "Bryan Alceus",
+    "country": "Haiti",
+    "position": "MID",
+    "price": 54
+  },
+  {
+    "player_id": "HAI_nazon_duckens",
+    "name": "Duckens Nazon",
+    "country": "Haiti",
+    "position": "FWD",
+    "price": 66
+  },
+  {
+    "player_id": "HAI_pierrot_frantzdy",
+    "name": "Frantzdy Pierrot",
+    "country": "Haiti",
+    "position": "FWD",
+    "price": 62
+  },
+  {
+    "player_id": "KSA_alowais_mohammed",
+    "name": "Mohammed Al-Owais",
+    "country": "Saudi Arabia",
+    "position": "GK",
+    "price": 54
+  },
+  {
+    "player_id": "KSA_abdulhamid_saud",
+    "name": "Saud Abdulhamid",
+    "country": "Saudi Arabia",
+    "position": "DEF",
+    "price": 64
+  },
+  {
+    "player_id": "KSA_aldawsari_salem",
+    "name": "Salem Al-Dawsari",
+    "country": "Saudi Arabia",
+    "position": "MID",
+    "price": 78
+  },
+  {
+    "player_id": "KSA_alburaikan_firas",
+    "name": "Firas Al-Buraikan",
+    "country": "Saudi Arabia",
+    "position": "FWD",
+    "price": 68
+  },
+  {
+    "player_id": "KSA_alshehri_saleh",
+    "name": "Saleh Al-Shehri",
+    "country": "Saudi Arabia",
+    "position": "FWD",
+    "price": 64
+  },
+  {
+    "player_id": "ARG_goalkeeper_argentina",
+    "name": "Argentina Goalkeeper",
+    "country": "Argentina",
+    "position": "GK",
+    "price": 50,
+    "pending": true
+  },
+  {
+    "player_id": "ARG_defender_argentina",
+    "name": "Argentina Defender",
+    "country": "Argentina",
+    "position": "DEF",
+    "price": 55,
+    "pending": true
+  },
+  {
+    "player_id": "ARG_midfielder_argentina",
+    "name": "Argentina Midfielder",
+    "country": "Argentina",
+    "position": "MID",
+    "price": 60,
+    "pending": true
+  },
+  {
+    "player_id": "ARG_forward_argentina",
+    "name": "Argentina Forward",
+    "country": "Argentina",
+    "position": "FWD",
+    "price": 65,
+    "pending": true
+  },
+  {
+    "player_id": "MEX_goalkeeper_mexico",
+    "name": "Mexico Goalkeeper",
+    "country": "Mexico",
+    "position": "GK",
+    "price": 50,
+    "pending": true
+  },
+  {
+    "player_id": "MEX_defender_mexico",
+    "name": "Mexico Defender",
+    "country": "Mexico",
+    "position": "DEF",
+    "price": 55,
+    "pending": true
+  },
+  {
+    "player_id": "MEX_midfielder_mexico",
+    "name": "Mexico Midfielder",
+    "country": "Mexico",
+    "position": "MID",
+    "price": 60,
+    "pending": true
+  },
+  {
+    "player_id": "MEX_forward_mexico",
+    "name": "Mexico Forward",
+    "country": "Mexico",
+    "position": "FWD",
+    "price": 65,
+    "pending": true
+  },
+  {
+    "player_id": "USA_goalkeeper_united",
+    "name": "United States Goalkeeper",
+    "country": "United States",
+    "position": "GK",
+    "price": 50,
+    "pending": true
+  },
+  {
+    "player_id": "USA_defender_united",
+    "name": "United States Defender",
+    "country": "United States",
+    "position": "DEF",
+    "price": 55,
+    "pending": true
+  },
+  {
+    "player_id": "USA_midfielder_united",
+    "name": "United States Midfielder",
+    "country": "United States",
+    "position": "MID",
+    "price": 60,
+    "pending": true
+  },
+  {
+    "player_id": "USA_forward_united",
+    "name": "United States Forward",
+    "country": "United States",
+    "position": "FWD",
+    "price": 65,
+    "pending": true
+  },
+  {
+    "player_id": "CAN_goalkeeper_canada",
+    "name": "Canada Goalkeeper",
+    "country": "Canada",
+    "position": "GK",
+    "price": 50,
+    "pending": true
+  },
+  {
+    "player_id": "CAN_defender_canada",
+    "name": "Canada Defender",
+    "country": "Canada",
+    "position": "DEF",
+    "price": 55,
+    "pending": true
+  },
+  {
+    "player_id": "CAN_midfielder_canada",
+    "name": "Canada Midfielder",
+    "country": "Canada",
+    "position": "MID",
+    "price": 60,
+    "pending": true
+  },
+  {
+    "player_id": "CAN_forward_canada",
+    "name": "Canada Forward",
+    "country": "Canada",
+    "position": "FWD",
+    "price": 65,
+    "pending": true
+  },
+  {
+    "player_id": "MAR_goalkeeper_morocco",
+    "name": "Morocco Goalkeeper",
+    "country": "Morocco",
+    "position": "GK",
+    "price": 50,
+    "pending": true
+  },
+  {
+    "player_id": "MAR_defender_morocco",
+    "name": "Morocco Defender",
+    "country": "Morocco",
+    "position": "DEF",
+    "price": 55,
+    "pending": true
+  },
+  {
+    "player_id": "MAR_midfielder_morocco",
+    "name": "Morocco Midfielder",
+    "country": "Morocco",
+    "position": "MID",
+    "price": 60,
+    "pending": true
+  },
+  {
+    "player_id": "MAR_forward_morocco",
+    "name": "Morocco Forward",
+    "country": "Morocco",
+    "position": "FWD",
+    "price": 65,
+    "pending": true
+  },
+  {
+    "player_id": "NED_goalkeeper_netherlands",
+    "name": "Netherlands Goalkeeper",
+    "country": "Netherlands",
+    "position": "GK",
+    "price": 50,
+    "pending": true
+  },
+  {
+    "player_id": "NED_defender_netherlands",
+    "name": "Netherlands Defender",
+    "country": "Netherlands",
+    "position": "DEF",
+    "price": 55,
+    "pending": true
+  },
+  {
+    "player_id": "NED_midfielder_netherlands",
+    "name": "Netherlands Midfielder",
+    "country": "Netherlands",
+    "position": "MID",
+    "price": 60,
+    "pending": true
+  },
+  {
+    "player_id": "NED_forward_netherlands",
+    "name": "Netherlands Forward",
+    "country": "Netherlands",
+    "position": "FWD",
+    "price": 65,
+    "pending": true
+  },
+  {
+    "player_id": "GHA_goalkeeper_ghana",
+    "name": "Ghana Goalkeeper",
+    "country": "Ghana",
+    "position": "GK",
+    "price": 50,
+    "pending": true
+  },
+  {
+    "player_id": "GHA_defender_ghana",
+    "name": "Ghana Defender",
+    "country": "Ghana",
+    "position": "DEF",
+    "price": 55,
+    "pending": true
+  },
+  {
+    "player_id": "GHA_midfielder_ghana",
+    "name": "Ghana Midfielder",
+    "country": "Ghana",
+    "position": "MID",
+    "price": 60,
+    "pending": true
+  },
+  {
+    "player_id": "GHA_forward_ghana",
+    "name": "Ghana Forward",
+    "country": "Ghana",
+    "position": "FWD",
+    "price": 65,
+    "pending": true
+  },
+  {
+    "player_id": "AUS_goalkeeper_australia",
+    "name": "Australia Goalkeeper",
+    "country": "Australia",
+    "position": "GK",
+    "price": 50,
+    "pending": true
+  },
+  {
+    "player_id": "AUS_defender_australia",
+    "name": "Australia Defender",
+    "country": "Australia",
+    "position": "DEF",
+    "price": 55,
+    "pending": true
+  },
+  {
+    "player_id": "AUS_midfielder_australia",
+    "name": "Australia Midfielder",
+    "country": "Australia",
+    "position": "MID",
+    "price": 60,
+    "pending": true
+  },
+  {
+    "player_id": "AUS_forward_australia",
+    "name": "Australia Forward",
+    "country": "Australia",
+    "position": "FWD",
+    "price": 65,
+    "pending": true
+  },
+  {
+    "player_id": "URU_goalkeeper_uruguay",
+    "name": "Uruguay Goalkeeper",
+    "country": "Uruguay",
+    "position": "GK",
+    "price": 50,
+    "pending": true
+  },
+  {
+    "player_id": "URU_defender_uruguay",
+    "name": "Uruguay Defender",
+    "country": "Uruguay",
+    "position": "DEF",
+    "price": 55,
+    "pending": true
+  },
+  {
+    "player_id": "URU_midfielder_uruguay",
+    "name": "Uruguay Midfielder",
+    "country": "Uruguay",
+    "position": "MID",
+    "price": 60,
+    "pending": true
+  },
+  {
+    "player_id": "URU_forward_uruguay",
+    "name": "Uruguay Forward",
+    "country": "Uruguay",
+    "position": "FWD",
+    "price": 65,
+    "pending": true
+  },
+  {
+    "player_id": "COL_goalkeeper_colombia",
+    "name": "Colombia Goalkeeper",
+    "country": "Colombia",
+    "position": "GK",
+    "price": 50,
+    "pending": true
+  },
+  {
+    "player_id": "COL_defender_colombia",
+    "name": "Colombia Defender",
+    "country": "Colombia",
+    "position": "DEF",
+    "price": 55,
+    "pending": true
+  },
+  {
+    "player_id": "COL_midfielder_colombia",
+    "name": "Colombia Midfielder",
+    "country": "Colombia",
+    "position": "MID",
+    "price": 60,
+    "pending": true
+  },
+  {
+    "player_id": "COL_forward_colombia",
+    "name": "Colombia Forward",
+    "country": "Colombia",
+    "position": "FWD",
+    "price": 65,
+    "pending": true
+  }
+]
