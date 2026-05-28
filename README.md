@@ -8,7 +8,7 @@ FWC is a free-entry 2026 World Cup fantasy game built for GenLayer Intelligent C
 - Chain ID: `61999`
 - Currency: `GEN`
 - Explorer: `https://explorer-studio.genlayer.com`
-- Deployed contract: pending deployment
+- Deployed contract: `0x3C0A23588889af044409d37D3dF82A8E989d02bE`
 
 ## Architecture
 
