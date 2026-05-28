@@ -75,9 +75,61 @@ If deployment returns an error, fix the surfaced contract or account issue, then
 
 Connect wallet, create a team for free, build a 15-player squad, set captain and vice, activate chips, then watch validator consensus settle matches and update your points.
 
-## Consensus In Plain English
+## How FWC Uses The GenLayer Stack
 
-FWC asks validators to agree on objective facts like score, scorers, cards, saves, and clean sheets with `strict_eq`. For the more subjective top-three bonus performers, validators compare answers with a natural-language equivalence rule: at least two of the three names must overlap.
+FWC is not just a fantasy football frontend with a contract attached. The core idea is to use GenLayer where normal smart contracts are weakest: reading real-world match information, interpreting messy public web data, and reaching a shared result that can safely update on-chain state.
+
+In a normal EVM contract, the World Cup scoring flow would require a trusted oracle or an admin manually entering match facts. In FWC, the Intelligent Contract can ask validators to fetch the match page, extract football stats, compare their answers, and only then write the settled result and fantasy points.
+
+### Optimistic Democracy
+
+Optimistic Democracy is the settlement model that lets GenLayer validators execute Intelligent Contract logic involving web data and AI reasoning without every participant needing to redo all work forever. For FWC, that means the commissioner can call `settle_match`, validators independently run the contract's nondeterministic data-gathering steps, and the network finalizes the result if the validators converge and no successful challenge overturns it.
+
+In product terms, this is what makes the game feel like an autonomous fantasy protocol instead of a spreadsheet run by the game owner. The commissioner triggers a gameweek settlement, but the actual scoring evidence is produced and checked by GenLayer validators.
+
+FWC uses this for:
+
+- Fetching FIFA match pages during match settlement.
+- Extracting objective match stats from those pages.
+- Agreeing on the settled match result.
+- Updating every manager's team points and leaderboard from that agreed result.
+- Resolving tournament awards after the final.
+
+### Equivalence Principle
+
+The Equivalence Principle is how FWC tells validators what it means for their answers to be “the same” when AI or web extraction is involved.
+
+FWC uses two styles:
+
+- `strict_eq` for objective facts that should match exactly.
+- `prompt_comparative` for subjective or fuzzy football judgments where equivalent answers may not be byte-for-byte identical.
+
+For match settlement, `strict_eq` is used to agree on structured facts such as:
+
+- final score,
+- scorers,
+- assisters,
+- yellow and red cards,
+- goalkeeper saves,
+- clean sheet teams,
+- minutes played,
+- penalties,
+- own goals,
+- defensive contributions.
+
+For bonus points, FWC uses a comparative equivalence rule. Validators are asked to identify the top three performers from the match. Because one validator may write “Kylian Mbappe” and another may include slightly different formatting or ordering, the contract uses `prompt_comparative` with a football-specific rule: the answers are treated as equivalent when at least two of the three selected names overlap.
+
+That lets FWC support the type of fantasy bonus system users expect from FPL/FIFA Fantasy while still keeping the result validator-mediated rather than manually assigned by the app owner.
+
+### Why This Matters For FWC
+
+The GenLayer stack gives FWC three properties that are difficult to combine in a normal fantasy game:
+
+- Real-world awareness: the contract can use public football data as part of execution.
+- Shared settlement: match outcomes are not controlled only by the frontend or by a private backend.
+- Transparent game state: teams, usernames, squads, points, chips, and leaderboard state live on-chain.
+
+So the build is best described as an on-chain fantasy World Cup game where GenLayer validators act as the match-stat settlement layer. The frontend is the FPL/Sorare-style user experience; the Intelligent Contract is the game engine; Optimistic Democracy and the Equivalence Principle are the trust and consensus layer that turn real-world World Cup data into on-chain fantasy points.
 
 ## Chips
 
