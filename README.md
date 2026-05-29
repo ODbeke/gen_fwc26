@@ -1,5 +1,7 @@
 # Fantasy World Cup (FWC)
 
+![Fantasy World Cup 2026 mascots](frontend/public/world-cup-mascots.jpeg)
+
 FWC is a free-entry 2026 World Cup fantasy game built for GenLayer Intelligent Contracts. Managers build 15-player squads, pick captains, play chips, and earn points from live match settlement. GenLayer validators fetch web data and use AI consensus for the parts ordinary smart contracts cannot handle.
 
 ## Network
