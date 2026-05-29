@@ -9,6 +9,7 @@ interface SquadState {
   setFormation: (formation: string) => void;
   hydrateSquad: (playerIds: string[], captainId: string, viceCaptainId: string) => void;
   clearSquad: () => void;
+  setSquad: (players: Player[]) => void;
   addPlayer: (player: Player) => void;
   removePlayer: (playerId: string) => void;
   setCaptain: (playerId: string) => void;
@@ -23,6 +24,11 @@ export const useSquadStore = create<SquadState>((set) => ({
   setFormation: (formation) => set({ formation }),
   hydrateSquad: (playerIds, captainId, viceCaptainId) => set({ selectedIds: playerIds, captainId, viceCaptainId }),
   clearSquad: () => set({ selectedIds: [], captainId: "", viceCaptainId: "" }),
+  setSquad: (players) => set({
+    selectedIds: players.map((player) => player.player_id),
+    captainId: players[0]?.player_id ?? "",
+    viceCaptainId: players[1]?.player_id ?? "",
+  }),
   addPlayer: (player) => set((state) => (
     state.selectedIds.includes(player.player_id) ? state : { selectedIds: [...state.selectedIds, player.player_id] }
   )),

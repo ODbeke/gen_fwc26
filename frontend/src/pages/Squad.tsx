@@ -1,17 +1,18 @@
 import { useEffect, useMemo, useState } from "react";
-import { Send, UserRound } from "lucide-react";
+import { Dices, Send, UserRound } from "lucide-react";
 import { BudgetBar } from "../components/BudgetBar";
 import { ChipCard } from "../components/ChipCard";
 import { PitchView } from "../components/PitchView";
 import { TransferPanel } from "../components/TransferPanel";
 import { useMyTeam } from "../hooks/useMyTeam";
 import { usePlayers } from "../hooks/usePlayers";
-import { formatPrice, STARTING_BUDGET, type Player } from "../lib/constants";
+import { formatPrice, MAX_PER_COUNTRY, STARTING_BUDGET, type Player, type Position } from "../lib/constants";
 import { callWrite } from "../lib/genlayer";
 import { useSquadStore } from "../store/squadStore";
 import { useUiStore } from "../store/uiStore";
 
 const formations = ["3-4-3", "4-3-3", "4-4-2", "3-5-2", "5-3-2", "5-4-1", "4-2-3-1"];
+const autoFillShape: Record<Position, number> = { GK: 2, DEF: 5, MID: 5, FWD: 3 };
 
 interface SquadProps {
   address: string;
@@ -20,13 +21,51 @@ interface SquadProps {
 export function Squad({ address }: SquadProps) {
   const { data: players = [], isLoading } = usePlayers();
   const { data: onchainTeam, isLoading: isTeamLoading, refetch: refetchTeam } = useMyTeam(address);
-  const { selectedIds, captainId, viceCaptainId, formation, addPlayer, removePlayer, setCaptain, setViceCaptain, setFormation, hydrateSquad, clearSquad } = useSquadStore();
+  const { selectedIds, captainId, viceCaptainId, formation, addPlayer, removePlayer, setCaptain, setViceCaptain, setFormation, hydrateSquad, clearSquad, setSquad } = useSquadStore();
   const { pickerPosition, openPicker, closePicker, notify } = useUiStore();
   const [username, setUsername] = useState("");
   const squad = useMemo(() => selectedIds.map((id) => players.find((player) => player.player_id === id)).filter(Boolean) as Player[], [players, selectedIds]);
   const spent = squad.reduce((sum, player) => sum + player.price, 0);
   const remaining = STARTING_BUDGET - spent;
   const hasTeam = Boolean(onchainTeam);
+
+  const shufflePlayers = (items: Player[]) => {
+    return [...items].sort(() => Math.random() - 0.5);
+  };
+
+  const buildRandomSquad = () => {
+    const selected: Player[] = [];
+    const countryCounts = new Map<string, number>();
+    let budgetUsed = 0;
+
+    for (const [position, count] of Object.entries(autoFillShape) as [Position, number][]) {
+      const pool = shufflePlayers(players.filter((player) => player.position === position));
+
+      for (const player of pool) {
+        if (selected.filter((item) => item.position === position).length >= count) break;
+        if (budgetUsed + player.price > STARTING_BUDGET) continue;
+        if ((countryCounts.get(player.country) ?? 0) >= MAX_PER_COUNTRY) continue;
+
+        selected.push(player);
+        budgetUsed += player.price;
+        countryCounts.set(player.country, (countryCounts.get(player.country) ?? 0) + 1);
+      }
+    }
+
+    return selected.length === 15 ? { selected, budgetUsed } : null;
+  };
+
+  const autoFillSquad = () => {
+    const result = Array.from({ length: 250 }, buildRandomSquad).find(Boolean);
+
+    if (!result) {
+      notify("Could not auto-fill a valid squad under 100.0m. Try again.");
+      return;
+    }
+
+    setSquad(shufflePlayers(result.selected));
+    notify(`Auto-filled 15 players for ${formatPrice(result.budgetUsed)}.`);
+  };
 
   useEffect(() => {
     if (!address) {
@@ -78,11 +117,17 @@ export function Squad({ address }: SquadProps) {
     <div className="grid gap-5 p-4 xl:grid-cols-[minmax(0,1.5fr)_minmax(360px,0.8fr)]">
       <section>
         <div className="mb-3 flex flex-wrap items-center gap-2">
-          {formations.map((item) => (
-            <button key={item} type="button" onClick={() => setFormation(item)} className={`focus-ring rounded px-3 py-2 text-sm ${formation === item ? "bg-gold text-ink" : "bg-panel text-slate-300"}`}>
-              {item}
-            </button>
-          ))}
+          <div className="flex flex-wrap gap-2">
+            {formations.map((item) => (
+              <button key={item} type="button" onClick={() => setFormation(item)} className={`focus-ring rounded px-3 py-2 text-sm ${formation === item ? "bg-gold text-ink" : "bg-panel text-slate-300"}`}>
+                {item}
+              </button>
+            ))}
+          </div>
+          <button type="button" onClick={autoFillSquad} disabled={isLoading} className="focus-ring ml-auto flex items-center gap-2 rounded border border-gold/70 bg-panel px-3 py-2 text-sm font-semibold text-gold hover:bg-gold hover:text-ink disabled:cursor-not-allowed disabled:border-line disabled:text-slate-500 disabled:hover:bg-panel">
+            <Dices className="h-4 w-4" aria-hidden="true" />
+            Auto-fill
+          </button>
         </div>
         {isLoading ? (
           <div className="rounded border border-line bg-panel p-10 text-center">Loading player pool...</div>
